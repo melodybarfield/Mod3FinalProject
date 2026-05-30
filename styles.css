@@ -321,7 +321,7 @@ header .row {
 .quality__grid {
   transform: translateX(50%) translateY(50%) scaleX(1) scaleY(1);
   width: 80px;
-  height: 80px;
+  /*height: 80px;*/
   position: absolute;
   right: 0px;
   bottom: 0px;
@@ -344,6 +344,15 @@ header .row {
 .steps__img--wrapper {
   display: flex;
   position: relative;
+  width: calc(100% - 50%);
+  justify-content: center; /* centers the image horizontally */
+  align-items: center; /* centers the image vertically */
+  height: auto;
+  overflow: hidden;
+}
+
+.steps__img {
+  z-index: 2;
 }
 
 .steps__grid {
@@ -354,7 +363,7 @@ header .row {
   width: 10rem;
   height: 10rem;
   opacity: 0.8;
-  z-index: -10;
+  z-index: -3;
   color: rgb(100, 21, 255);
   fill: currentColor;
 }
