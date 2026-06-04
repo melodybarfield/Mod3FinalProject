@@ -507,26 +507,105 @@ header .row {
 
 .list__plans {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  width: (100% / 3);
+  width: 100%;
+  position: relative;
+  gap: 32px;
 }
 
 .plan {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   border-radius: 8px;
   border: 1px solid rgb(229, 231, 235);
+  box-shadow:
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   position: relative;
+  flex: 1;
 }
 
-.plan:nth-child(1) .plan__stripe {
+.plan__header {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  line-height: 1.625;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.plan__middle {
+  display: flex;
+  flex-direction: column;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  padding: 8px;
+}
+
+.plan__footer {
+  padding: 16px 8px;
+}
+
+.plan:nth-child(odd) .plan__middle {
+  border-top: 2px solid rgb(229, 231, 235);
+  border-bottom: 2px solid rgb(229, 231, 235);
+}
+
+.plan:nth-child(2) .plan__middle {
+  border-top: 2px solid rgb(102, 126, 234);
+  border-bottom: 2px solid rgb(102, 126, 234);
+}
+
+.plan:nth-child(1) .plan__stripe,
+.plan:nth-child(1) .btn {
   color: #f7fafc;
   background: linear-gradient(
     115deg,
     rgb(56, 178, 172) 0%,
     rgb(129, 230, 217) 100%
   );
+}
+
+.plan:nth-child(2) {
+  background: linear-gradient(
+    135deg,
+    rgb(76, 81, 191) 0%,
+    rgb(102, 126, 234) 100%
+  );
+}
+
+.plan:nth-child(3) .plan__stripe,
+.plan:nth-child(3) .btn {
+  color: rgb(247, 250, 252);
+  background: linear-gradient(
+    115deg,
+    rgb(245, 101, 101) 0%,
+    rgb(254, 178, 178) 100%
+  );
+}
+
+.plan:nth-child(odd) .plan__name,
+.plan:nth-child(odd) .plan__price,
+.plan:nth-child(odd) .plan__target-group {
+  color: rgb(26, 32, 44);
+}
+
+.plan:nth-child(even) .plan__name,
+.plan:nth-child(even) .plan__price,
+.plan:nth-child(even) .plan__duration,
+.plan:nth-child(even) .plan__target-group,
+.plan:nth-child(even) .plan__feature {
+  color: rgb(255, 255, 255);
+}
+
+.plan:nth-child(odd) .plan__duration,
+.plan:nth-child(odd) .plan__feature {
+  color: #a0aec0;
 }
 
 .plan__stripe {
@@ -539,14 +618,22 @@ header .row {
   border-top-right-radius: 0.5rem;
 }
 
-.plan:nth-child(odd) .plan__name {
-  color: #1a202c;
-}
-
 .plan__name {
   font-size: 20px;
   font-weight: bold;
   line-height: 1.625;
+}
+
+.plan__price {
+  font-size: 48px;
+  margin: 4px 0;
+}
+
+.plan__target-group {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.025em;
 }
 
 #pricing .section__para {
@@ -555,11 +642,22 @@ header .row {
   margin-bottom: 32px;
 }
 
-.plan:nth-child(1) .btn {
-  color: #f7fafc;
-  background: linear-gradient(
-    115deg,
-    rgb(56, 178, 172) 0%,
-    rgb(129, 230, 217) 100%
-  );
+.plan__feature {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(113, 128, 150);
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.plan__name,
+.plan__price,
+.plan__duration {
+  font-weight: bold;
+  line-height: 1.625;
+}
+
+.plan:nth-child(2) .btn {
+  background-color: rgb(255, 255, 255);
+  color: rgb(76, 81, 191);
 }
