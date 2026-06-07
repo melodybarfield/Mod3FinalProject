@@ -345,7 +345,7 @@ header .row {
 .steps__img--wrapper {
   display: flex;
   position: relative;
-  width: calc(100% - 50%);
+  width: 50%;
   justify-content: center; /* centers the image horizontally */
   align-items: center; /* centers the image vertically */
   height: auto;
@@ -668,4 +668,108 @@ header .row {
   width: 272px;
   cursor: pointer;
   margin: 32px 0;
+}
+
+#testimonials .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonials__img--wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 50%;
+  height: auto;
+  margin-right: 64px;
+}
+
+.testimonials__description {
+  width: 70%;
+}
+
+.testimonial__rating i {
+  color: rgb(246, 173, 85);
+  margin-right: 2px;
+  margin-top: 48px;
+}
+
+.testimonial__title {
+  color: #4a5568;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 16px;
+  line-height: 1.625;
+}
+
+.testimonial__para {
+  color: rgb(74, 85, 104);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.625;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.testimonial__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.testimonial__profile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.testimonial__img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.testimonial__name {
+  color: rgb(74, 85, 104);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.625;
+}
+
+.testimonial__position {
+  color: rgb(124, 139, 161);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.testimonial_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial__button {
+  background-color: #edf2f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px;
+  border-radius: 50%;
+  border: none;
+  margin: 0 12px;
+  cursor: pointer;
+}
+
+.testimonial__button svg {
+  width: 16px;
+  height: 16px;
+}
+
+.divider {
+  margin: 0 12px;
+  border-right: 1px solid #edf2f7;
+  width: 0.5px;
+  background-color: #edf2f7;
+  height: 20px;
 }
