@@ -812,6 +812,7 @@ header .row {
 .start__row {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 0 32px;
   margin: auto 0;
 }
@@ -833,6 +834,9 @@ header .row {
 }
 
 .start__btn {
+  white-space: nowrap;
+  min-width: 180px;
+  height: 72px;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.5;
@@ -843,6 +847,7 @@ header .row {
   transition: all 300ms ease;
   cursor: pointer;
 }
+
 .start__btn:nth-child(1) {
   box-shadow:
     rgba(0, 0, 0, 0) 0px 0px 0px 0px,
