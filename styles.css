@@ -743,10 +743,9 @@ header .row {
   line-height: 1.5;
 }
 
-.testimonial_buttons {
+.testimonial__buttons {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .testimonial__button {
@@ -767,9 +766,98 @@ header .row {
 }
 
 .divider {
-  margin: 0 12px;
-  border-right: 1px solid #edf2f7;
-  width: 0.5px;
+  width: 1px;
   background-color: #edf2f7;
   height: 20px;
+  margin: 0 4px;
+}
+
+#start .row {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.start__blob--1 {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 20rem;
+  width: 20rem;
+  transform: translate(-5rem, 8rem);
+  color: rgb(80 17 204);
+  opacity: 0.5;
+}
+
+.start__blob--2 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 20rem;
+  width: 20rem;
+  transform: translate(5rem, -16rem);
+  color: rgb(80 17 204);
+  opacity: 0.5;
+}
+
+.start__middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(100, 21, 255);
+  border-radius: 8px;
+  padding: 96px 0;
+}
+
+.start__row {
+  display: flex;
+  align-items: center;
+  padding: 0 32px;
+  margin: auto 0;
+}
+
+.start__para {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #f7fafc;
+  z-index: 2;
+  margin: 0 64px;
+}
+
+.start__buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.start__btn {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.025px;
+  color: #f7fafc;
+  padding: 12px 64px;
+  border-radius: 500px;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+.start__btn:nth-child(1) {
+  box-shadow:
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  border: none;
+  margin-right: 32px;
+  background: rgb(245, 101, 101);
+  transition: 300ms;
+}
+
+.start__btn:nth-child(2) {
+  background-color: rgb(100, 21, 255);
+  border: 1px solid rgb(160, 174, 192);
+  margin-right: 64px;
+  transition: 300ms;
 }
