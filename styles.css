@@ -32,6 +32,7 @@ p {
 }
 
 a {
+  display: inline;
   text-decoration: none;
 }
 
@@ -46,6 +47,14 @@ ul {
 li {
   list-style-type: none;
   padding-left: 16px;
+}
+
+footer {
+  padding: 96px 32px;
+  background-color: rgb(100, 21, 255);
+  margin-bottom: -32px;
+  position: relative;
+  overflow: hidden;
 }
 
 .container {
@@ -865,4 +874,117 @@ header .row {
   border: 1px solid rgb(160, 174, 192);
   margin-right: 64px;
   transition: 300ms;
+}
+
+.footer__blob--1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 320px;
+  transform: translateX(-80px) translateY(-128px);
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.footer__blob--2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 320px;
+  height: 320px;
+  transform: translateX(128px) translateY(192px);
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -48px;
+  flex-wrap: wrap;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 48px;
+  z-index: 2;
+}
+
+.footer__column--title {
+  text-transform: uppercase;
+  color: #f7fafc;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.footer__column--link {
+  color: #f7fafc;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-top: 12px;
+  position: relative;
+  cursor: pointer;
+}
+
+.footer__divider {
+  background: rgb(116, 44, 255);
+  width: 100%;
+  height: 2px;
+  margin: 64px 0;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer__logo--img {
+  height: 32px;
+  width: 32px;
+}
+
+.footer__logo--name {
+  color: #f7fafc;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 0.05;
+  margin-left: 8px;
+}
+
+.footer__copyright {
+  color: rgb(160, 174, 192);
+  font-weight: 500;
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+}
+
+.footer__social--link {
+  display: flex;
+  justify-content: center;
+  background: #f7fafc;
+  border-radius: 50%;
+  padding: 8px;
+  margin-left: 16px;
+  z-index: 2;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.footer__social--link svg {
+  height: 16px;
+  width: 16px;
 }
