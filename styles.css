@@ -1220,13 +1220,46 @@ footer ul {
 @media (max-width: 550px) {
   .container {
     width: 100%;
-    max-width: 530px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 32px 16px;
   }
 
+  #features .container {
+    padding-bottom: 0;
+  }
+
   .row {
+    width: 100%;
     text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #steps .row,
+  #pricing .row,
+  #testimonials .row,
+  .testimonial__footer,
+  .testimonial__profile,
+  .list__plans {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  img,
+  .testimonials__img--wrapper {
+    width: 100%;
+    height: auto;
   }
 
   .nav__links {
@@ -1240,6 +1273,11 @@ footer ul {
   h1 {
     font-size: 28px;
     text-align: center;
+  }
+
+  h4,
+  #testimonials img {
+    margin-top: 64px;
   }
 
   header .row {
@@ -1296,7 +1334,7 @@ footer ul {
   }
 
   .section__title {
-    font-size: 36px;
+    font-size: 30px;
     text-align: center;
     line-height: 1.25;
     margin-top: 16px;
@@ -1318,14 +1356,8 @@ footer ul {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding-bottom: 0;
   }
-
-  /*.services {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    text-align: center;
-  }*/
 
   .services {
     justify-content: center;
@@ -1344,5 +1376,74 @@ footer ul {
   .service__para {
     margin-top: 4px;
     line-height: 2;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .quality__description,
+  .steps__description,
+  .values__description,
+  .values__list,
+  .testimonials__img--wrapper {
+    margin-right: 0px;
+  }
+
+  .steps__img--wrapper {
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .quality__description,
+  .quality__img--wrapper,
+  .steps__description,
+  .steps__img--wrapper,
+  .values__description,
+  .values__img,
+  .testimonials__description,
+  .testimonials__img,
+  .value {
+    width: 100%;
+    max-width: 448px;
+  }
+
+  .step,
+  .values__list,
+  .value {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .step__description {
+    margin-left: 0;
+  }
+
+  .step__title {
+    margin-top: 8px;
+  }
+
+  #steps .section__title {
+    margin-bottom: 56px;
+  }
+
+  .value__para {
+    width: 100%;
+    text-wrap: pretty;
+  }
+
+  .value__title {
+    flex: space-between;
+  }
+
+  .value:first-child,
+  .testimonial__profile {
+    margin-bottom: 24px;
+  }
+
+  .testimonial__para {
+    margin-bottom: 0;
   }
 }
