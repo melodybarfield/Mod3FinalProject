@@ -649,9 +649,16 @@ header .row {
 
 /*PRICING SECTION*/
 
+#pricing .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .pricing__description {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -696,6 +703,15 @@ header .row {
   border-top-width: 2px;
   border-bottom-width: 2px;
   padding: 32px;
+}
+
+.plan__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pricing .btn {
 }
 
 .plan:nth-child(odd) .plan__middle {
@@ -1187,6 +1203,16 @@ footer ul {
   .service__row {
     padding: 32px 8px;
     margin: 0 16px;
+  }
+
+  .list__plans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plan {
+    margin-right: 0px;
   }
 
   footer {
