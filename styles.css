@@ -62,6 +62,8 @@ footer {
   margin-bottom: -32px;
   position: relative;
   overflow: hidden;
+  width: 100%; /* Sets the footer to full width */
+  margin: 0; /* Removes any margins that could affect alignment */
 }
 
 .container {
@@ -81,11 +83,10 @@ footer {
   color: #fff;
   font-size: 14px;
   font-weight: 700;
-  /*margin: 8px 0px;
-  width: 160px;*/
   line-height: 1.5;
   padding: 12px 32px;
   transition: all 300ms ease;
+  cursor: pointer;
 }
 
 .purple {
@@ -116,6 +117,12 @@ footer {
   letter-spacing: 0.025em;
   color: rgb(124, 139, 161);
   text-align: center;
+}
+
+#quality .section__para,
+#values .section__para,
+#testimonials .section__para {
+  text-align: left;
 }
 
 /*LANDING SECTION*/
@@ -279,8 +286,6 @@ header .row {
 
 .header__description {
   width: 40%;
-  display: flex;
-  flex-direction: column;
 }
 
 .header__description--para {
@@ -291,12 +296,12 @@ header .row {
 
 .header__email {
   position: relative;
-  width: 100%;
+  width: 50%;
   max-width: 448px;
   height: 68px;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
+  /*justify-content: flex-end;*/
 }
 
 .header__email--input {
@@ -334,13 +339,9 @@ header .row {
   opacity: 0.5;
 }
 
-.header__img--wrapper {
-  width: calc(100% - 55%);
-}
-
 .header__img {
   width: 100%;
-  max-width: 768px;
+  max-width: 512px;
 }
 
 /*FEATURES SECTION*/
@@ -422,7 +423,8 @@ header .row {
   justify-content: space-between;
 }
 
-.quality__description .quality__img--wrapper {
+.quality__description,
+.quality__img--wrapper {
   width: 50%;
 }
 
@@ -439,8 +441,9 @@ header .row {
   display: flex;
   border-radius: 4px;
   border: 1px solid rgb(229, 231, 235);
+  border-image: initial;
   position: relative;
-  margin: 32px 56px;
+  margin: 56px;
   z-index: 2;
 }
 
@@ -1147,13 +1150,35 @@ footer ul {
     justify-content: center;
   }
 
-  #features .row {
-    width: 100%;
-    max-width: 0;
+  .header__description {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .services {
-    max-width: 768px;
+  .header__description,
+  .header__img--wrapper {
+    width: 100%;
+    max-width: 512px;
+    margin: 0 auto;
+  }
+
+  header .row {
+    align-items: flex-end;
+  }
+
+  #features .row {
+    width: 100%;
+  }
+
+  .service__row {
+    padding: 32px 8px;
+    margin: 0 16px;
+  }
+
+  footer {
+    padding: 80px 32px;
   }
 }
 
@@ -1211,7 +1236,7 @@ footer ul {
   .header__email,
   img,
   .testimonials__img--wrapper {
-    width: 100%;
+    width: 100%; /* Image will take full width of the container */
     height: auto;
   }
 
@@ -1251,7 +1276,7 @@ footer ul {
   .header__email--input {
     position: static;
     line-height: 1.5;
-    padding: 16px 0px 16px 32px;
+    padding: 16px 0px;
     width: 100%;
     margin: 0px auto;
     display: flex;
@@ -1291,12 +1316,13 @@ footer ul {
     font-size: 14px;
   }
 
-  #features .row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 0px;
+  .service {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .service:last-child {
+    margin-bottom: 80px;
   }
 
   .service__row {
@@ -1318,6 +1344,7 @@ footer ul {
   .service__para {
     margin-top: 4px;
     line-height: 2;
+    max-width: 240px;
   }
 
   .quality__description,
@@ -1410,14 +1437,14 @@ footer ul {
   }
 
   .footer__columns {
-    justify-content: center;
+    justify-content: space-evenly;
     display: flex;
     flex-wrap: wrap;
   }
 
-  .footer__column:nth-child(-n + 3) {
+  /*.footer__column:nth-child(-n + 3) {
     margin-top: 0;
-  }
+  }*/
 
   .footer__column {
     width: auto;
