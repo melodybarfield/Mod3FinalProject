@@ -295,13 +295,13 @@ header .row {
 }
 
 .header__email {
-  position: relative;
-  width: 50%;
+  width: 100%;
   max-width: 448px;
   height: 68px;
+  position: relative;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
-  /*justify-content: flex-end;*/
 }
 
 .header__email--input {
@@ -315,14 +315,26 @@ header .row {
   position: absolute;
   top: 0;
   bottom: 0;
+  left: 0;
+  right: 0;
   z-index: 1;
   transition: border-color 300ms;
 }
 
 .header__email--btn {
+  position: relative;
   z-index: 2;
-  height: calc(100% - 16px);
   margin: 8px;
+  margin-left: auto;
+  height: calc(100% - 16px);
+  border-radius: 500px;
+  width: 160px;
+  border: none;
+  background-color: #6415ff;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .header__customers--title {
@@ -1460,5 +1472,11 @@ footer ul {
   .footer__columns,
   .footer__socials {
     margin: 0;
+  }
+
+  #quality .section__para,
+  #values .section__para,
+  #testimonials .section__para {
+    text-align: center;
   }
 }
