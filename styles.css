@@ -1183,6 +1183,24 @@ footer ul {
     padding: 32px 16px;
   }
 
+  #quality .container,
+  #steps .container,
+  #values .container,
+  #pricing .container {
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+
+  #start .container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-bottom: 80px;
+    width: 100%;
+    max-width: 912px;
+    justify-content: center;
+    align-items: center;
+  }
+
   .row {
     width: 100%;
     max-width: 1024px;
@@ -1202,6 +1220,16 @@ footer ul {
 
   #features .row {
     width: 100%;
+  }
+
+  #quality .row,
+  #testimonials .row {
+    padding-bottom: 64px;
+  }
+
+  #steps .row,
+  #values .row {
+    padding-bottom: 80px;
   }
 
   .nav__row,
@@ -1293,15 +1321,6 @@ footer ul {
 
   .plan:last-child {
     margin-bottom: 80px;
-  }
-
-  #start .container {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    width: 100%;
-    max-width: 912px;
-    justify-content: center;
-    align-items: center;
   }
 
   .start__row {
