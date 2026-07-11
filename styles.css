@@ -1315,6 +1315,13 @@ footer ul {
   footer {
     padding: 80px 32px;
   }
+
+  .footer__bottom {
+    width: 100%;
+    max-width: 1024px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 }
 
 @media (max-width: 768px) {
