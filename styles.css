@@ -781,11 +781,6 @@ header .row {
   border-top-right-radius: 0.5rem;
 }
 
-.plan:nth-child(odd) .plan__stripe {
-  border-top-left-radius: 0%;
-  border-top-right-radius: 0%;
-}
-
 .plan__name {
   font-size: 20px;
   font-weight: bold;
