@@ -1306,6 +1306,13 @@ footer ul {
     margin: 0px 32px;
   }
 
+  .steps__grid {
+    bottom: 30px;
+    left: 50%;
+    width: 5rem;
+    height: 5rem;
+  }
+
   .list__plans {
     display: flex;
     flex-direction: column;
