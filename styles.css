@@ -1204,6 +1204,18 @@ footer ul {
     width: 100%;
   }
 
+  .nav__row,
+  #quality .row,
+  #steps .row,
+  #values .row,
+  #testimonials .row {
+    margin: 0 48px;
+  }
+
+  /*#testimonials .row {
+    width: 90%;
+  }*/
+
   .nav__links {
     display: none;
   }
@@ -1282,6 +1294,18 @@ footer ul {
   .plan:last-child {
     margin-bottom: 80px;
   }
+
+  /*.testimonials__img--wrapper {
+    width: 100%;
+    max-width: 320px;
+    margin: auto 0;
+  }
+
+  .testimonial {
+    width: 100%;
+    max-width: 512px;
+    margin: auto 0;
+  }*/
 
   #start .container {
     padding-top: 5rem;
