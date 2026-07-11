@@ -1212,10 +1212,6 @@ footer ul {
     margin: 0 48px;
   }
 
-  /*#testimonials .row {
-    width: 90%;
-  }*/
-
   .nav__links {
     display: none;
   }
@@ -1278,6 +1274,10 @@ footer ul {
     width: calc(100% / 2);
   }
 
+  .steps__description {
+    margin: 0px 32px;
+  }
+
   .list__plans {
     display: flex;
     flex-direction: column;
@@ -1294,18 +1294,6 @@ footer ul {
   .plan:last-child {
     margin-bottom: 80px;
   }
-
-  /*.testimonials__img--wrapper {
-    width: 100%;
-    max-width: 320px;
-    margin: auto 0;
-  }
-
-  .testimonial {
-    width: 100%;
-    max-width: 512px;
-    margin: auto 0;
-  }*/
 
   #start .container {
     padding-top: 5rem;
