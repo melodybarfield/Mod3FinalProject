@@ -939,6 +939,7 @@ header .row {
 
 #start .row {
   position: relative;
+  border-radius: 8px;
   overflow: hidden;
 }
 
