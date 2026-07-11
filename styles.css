@@ -950,6 +950,7 @@ header .row {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .start__row {
@@ -983,6 +984,7 @@ header .row {
   transform: translate(5rem, -16rem);
   color: rgb(80 17 204);
   opacity: 0.5;
+  z-index: 1;
 }
 
 .start__title {
@@ -1278,6 +1280,35 @@ footer ul {
 
   .plan:last-child {
     margin-bottom: 80px;
+  }
+
+  #start .container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    width: 100%;
+    max-width: 912px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .start__row {
+    flex-direction: column;
+  }
+
+  .start__title {
+    text-align: center;
+    width: 100%;
+    max-width: 512px;
+  }
+
+  .start__buttons {
+    width: auto;
+    margin-top: 24px;
+  }
+
+  .start__button {
+    padding: 16px 32px;
+    height: auto;
   }
 
   footer {
