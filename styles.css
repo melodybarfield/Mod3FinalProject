@@ -1581,6 +1581,11 @@ footer ul {
     margin-bottom: 24px;
   }
 
+  .plan {
+    width: 100%;
+    max-width: 368px;
+  }
+
   .testimonial__para {
     margin-bottom: 0;
   }
@@ -1622,10 +1627,6 @@ footer ul {
     display: flex;
     flex-wrap: wrap;
   }
-
-  /*.footer__column:nth-child(-n + 3) {
-    margin-top: 0;
-  }*/
 
   .footer__column {
     width: auto;
