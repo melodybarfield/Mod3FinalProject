@@ -1418,6 +1418,8 @@ footer ul {
   .testimonials__img--wrapper {
     width: 100%;
     height: auto;
+    justify-content: center;
+    align-items: center;
   }
 
   .nav__links {
@@ -1528,7 +1530,6 @@ footer ul {
   }
 
   .quality__description,
-  .steps__description,
   .values__description,
   .values__list,
   .testimonials__img--wrapper,
