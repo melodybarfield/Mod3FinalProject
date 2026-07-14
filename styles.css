@@ -1764,6 +1764,10 @@ footer ul {
     padding-top: 0;
   }
 
+  #steps .container {
+    margin: 40px 0;
+  }
+
   h1 {
     font-size: 28px;
     text-align: center;
@@ -1855,10 +1859,24 @@ footer ul {
     height: 65px;
   }
 
-  .quality__description {
-    width: 100%;
+  .quality__description,
+  .steps__img {
+    width: auto;
     max-width: 400px;
   }
+
+  .steps__img--wrapper {
+    overflow: visible;
+    margin-bottom: 32px;
+  }
+
+  .steps__grid {
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+        height: 5rem;
+        width: 5rem;
+    }
 
   .quality__description,
   .values__description,
