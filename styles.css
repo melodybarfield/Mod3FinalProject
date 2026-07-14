@@ -1429,13 +1429,7 @@ footer ul {
   }
 
   .header__email,
-  img,
   .testimonials__img--wrapper {
-    width: 100%;
-    max-width: 468px;
-    height: auto;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 24px;
   }
 
@@ -1458,6 +1452,16 @@ footer ul {
 
   h4 {
     margin-top: 64px;
+  }
+
+  img,
+  .header__email,
+  .testimonials__img--wrapper {
+    width: 100%;
+    max-width: 468px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
   }
 
   .header__description {
@@ -1631,7 +1635,7 @@ footer ul {
   .testimonials__description,
   .testimonials__img,
   .value {
-    width: 100%;
+    width: auto;
     max-width: 500px;
   }
 
