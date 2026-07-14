@@ -1754,9 +1754,10 @@ footer ul {
 @media (max-width: 420px) {
   .container {
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     margin: 0 auto;
-    padding: 32px 16px;
+    padding: 64px 0;
+    }
   }
 
   #landing .container {
@@ -1847,6 +1848,16 @@ footer ul {
     text-align: center;
     padding-bottom: 0;
     margin: 0 24px;
+  }
+
+  .quality__grid {
+    width: 65px;
+    height: 65px;
+  }
+
+  .quality__description {
+    width: 100%;
+    max-width: 400px;
   }
 
   .quality__description,
