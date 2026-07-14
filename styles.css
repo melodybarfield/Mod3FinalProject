@@ -1580,7 +1580,7 @@ footer ul {
 
   .service__para {
     margin-top: 4px;
-    text-align-last: left;
+    text-align: left;
     line-height: 2;
     max-width: 240px;
   }
@@ -1772,6 +1772,10 @@ footer ul {
     font-size: 30px;
   }
 
+  #features .section__title {
+    font-size: 36px;
+  }
+
   .nav__row {
     margin: 0;
     padding: 0 20px;
@@ -1822,11 +1826,27 @@ footer ul {
     margin-top: 20px;
   }
 
+  #features .container {
+    padding-top: 40px;
+  }
+
+  .service__description,
+  .service__para {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+
+  .service__description {
+    padding: 24px 16px;
+  }
+
   .service__row {
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding-bottom: 0;
+    margin: 0 24px;
   }
 
   .quality__description,
