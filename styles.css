@@ -1231,6 +1231,12 @@ footer ul {
 
   #features .row {
     width: 100%;
+    max-width: 800px;
+  }
+
+  #quality .row {
+    width: 100%;
+    max-width: 960px;
   }
 
   /*#quality .row,
@@ -1263,12 +1269,12 @@ footer ul {
     margin-top: 80px;
   }*/
 
-  #features .section__title {
-    font-size: 48px;
-  }
-
   .section__title {
     font-size: 36px;
+  }
+
+  #features .section__title {
+    font-size: 48px;
   }
 
   .section__para {
@@ -1315,6 +1321,11 @@ footer ul {
 
   .service {
     width: calc(100% / 2);
+  }
+
+  .quality__description {
+    margin-right: 0px;
+    padding-right: 48px;
   }
 
   /*.steps__description {
