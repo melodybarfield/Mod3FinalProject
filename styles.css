@@ -1183,15 +1183,20 @@ footer ul {
     display: flex;
     margin: 0 auto;
     padding: 32px 16px;
+    margin: 144px 48px;
   }
 
-  #quality .container,
+  #landing .container {
+    margin-bottom: 0px;
+  }
+
+  /*#quality .container,
   #steps .container,
   #values .container,
   #pricing .container {
     margin-top: 80px;
     margin-bottom: 40px;
-  }
+  }*/
 
   #start .container {
     padding-top: 5rem;
@@ -1202,6 +1207,10 @@ footer ul {
     justify-content: center;
     align-items: center;
   }
+
+  /*#landing .container {
+    margin-bottom: 100px;
+  }*/
 
   .row {
     width: 100%;
@@ -1224,7 +1233,7 @@ footer ul {
     width: 100%;
   }
 
-  #quality .row,
+  /*#quality .row,
   #testimonials .row {
     padding-bottom: 64px;
   }
@@ -1240,7 +1249,7 @@ footer ul {
   #values .row,
   #testimonials .row {
     margin: 0 48px;
-  }
+  }*/
 
   .nav__links {
     display: none;
@@ -1250,8 +1259,12 @@ footer ul {
     display: block;
   }
 
-  header h1 {
+  /*header h1 {
     margin-top: 80px;
+  }*/
+
+  #features .section__title {
+    font-size: 48px;
   }
 
   .section__title {
@@ -1282,19 +1295,19 @@ footer ul {
     flex-direction: column;
   }
 
-  .header__customers--title {
+  /*.header__customers--title {
     margin-top: 40px;
-  }
+  }*/
 
   .header__customers--img {
-    margin-top: 16px;
-    margin-bottom: 64px;
+    /*margin-top: 16px;
+    margin-bottom: 64px;*/
     padding-right: 0px;
   }
 
-  .header__img {
+  /*.header__img {
     margin-bottom: 32px;
-  }
+  }*/
 
   .services {
     max-width: 768px;
@@ -1304,9 +1317,9 @@ footer ul {
     width: calc(100% / 2);
   }
 
-  .steps__description {
+  /*.steps__description {
     margin: 0px 32px;
-  }
+  }*/
 
   .steps__grid {
     bottom: 30px;
@@ -1328,9 +1341,9 @@ footer ul {
     margin-bottom: 32px;
   }
 
-  .plan:last-child {
+  /*.plan:last-child {
     margin-bottom: 80px;
-  }
+  }*/
 
   .start__row {
     flex-direction: column;
@@ -1344,7 +1357,7 @@ footer ul {
 
   .start__buttons {
     width: auto;
-    margin-top: 24px;
+    /*margin-top: 24px;*/
   }
 
   .start__button {
@@ -1378,6 +1391,10 @@ footer ul {
   #pricing .container {
     padding-bottom: 0;
     margin-bottom: 0;
+  }
+
+  #features .container {
+    padding-top: 0;
   }
 
   #quality .container {
@@ -1757,11 +1774,11 @@ footer ul {
     max-width: 420px;
     margin: 0 auto;
     padding: 64px 0;
-    }
   }
 
   #landing .container,
-  #values .container {
+  #values .container,
+  #features .container {
     padding-top: 0;
   }
 
@@ -1784,7 +1801,6 @@ footer ul {
     font-size: 30px;
   }
 
-  #features .section__title,
   #pricing .section__title,
   .plan__price {
     font-size: 36px;
@@ -1880,6 +1896,10 @@ footer ul {
     max-width: 400px;
   }
 
+  #quality .section__para {
+    text-align: left;
+  }
+
   .steps__img--wrapper {
     overflow: visible;
     margin-bottom: 32px;
@@ -1891,7 +1911,7 @@ footer ul {
     transform: translateX(-50%);
     height: 5rem;
     width: 5rem;
-    }
+  }
 
   .quality__description,
   .values__description,
@@ -1941,6 +1961,7 @@ footer ul {
     flex: space-between;
   }
 
+  #landing .container,
   .value:first-child,
   .testimonial__profile {
     margin-bottom: 24px;
@@ -1979,7 +2000,7 @@ footer ul {
   .testimonial__img {
     height: 64px;
     width: 64px;
-    }
+  }
 
   .start__title {
     font-size: 24px;
@@ -2015,7 +2036,7 @@ footer ul {
     align-items: center;
   }
 
-  .footer__column:nth-child(-n+3) {
+  .footer__column:nth-child(-n + 3) {
     margin-top: 0;
   }
 
