@@ -1754,13 +1754,14 @@ footer ul {
 @media (max-width: 420px) {
   .container {
     width: 100%;
-    max-width: 400px;
+    max-width: 420px;
     margin: 0 auto;
     padding: 64px 0;
     }
   }
 
-  #landing .container {
+  #landing .container,
+  #values .container {
     padding-top: 0;
   }
 
@@ -1768,17 +1769,30 @@ footer ul {
     margin: 40px 0;
   }
 
+  #pricing .container {
+    width: 100%;
+    max-width: 380px;
+  }
+
   h1 {
     font-size: 28px;
     text-align: center;
   }
 
-  #landing h1 {
+  #landing h1,
+  #testimonials .section__title {
     font-size: 30px;
   }
 
-  #features .section__title {
+  #features .section__title,
+  #pricing .section__title,
+  .plan__price {
     font-size: 36px;
+  }
+
+  #values .section__tag,
+  #testimonials .container {
+    margin-top: 40px;
   }
 
   .nav__row {
@@ -1831,7 +1845,8 @@ footer ul {
     margin-top: 20px;
   }
 
-  #features .container {
+  #features .container,
+  .testimonial__footer {
     padding-top: 40px;
   }
 
@@ -1874,8 +1889,8 @@ footer ul {
     bottom: -50px;
     left: 50%;
     transform: translateX(-50%);
-        height: 5rem;
-        width: 5rem;
+    height: 5rem;
+    width: 5rem;
     }
 
   .quality__description,
@@ -1901,14 +1916,15 @@ footer ul {
   .testimonials__img,
   .value {
     width: 100%;
-    max-width: 448px;
+    max-width: 420px;
   }
 
   .step__description {
     margin-left: 0;
   }
 
-  .step__title {
+  .step__title,
+  #pricing .container {
     margin-top: 8px;
   }
 
@@ -1936,7 +1952,8 @@ footer ul {
   }
 
   .quality__img--wrapper,
-  .testimonial__para {
+  .testimonial__para,
+  #steps .container {
     margin-bottom: 0;
   }
 
@@ -1951,6 +1968,18 @@ footer ul {
     justify-content: center;
     align-items: center;
   }
+
+  .testimonial__footer,
+  .testimonial__profile,
+  .start__buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial__img {
+    height: 64px;
+    width: 64px;
+    }
 
   .start__title {
     font-size: 24px;
@@ -1973,8 +2002,9 @@ footer ul {
   }
 
   .footer__columns {
-    justify-content: space-evenly;
-    display: flex;
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
     flex-wrap: wrap;
   }
 
@@ -1983,6 +2013,10 @@ footer ul {
     padding: 0 16px;
     text-align: center;
     align-items: center;
+  }
+
+  .footer__column:nth-child(-n+3) {
+    margin-top: 0;
   }
 
   .footer__copyright {
