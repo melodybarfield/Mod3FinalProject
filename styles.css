@@ -17,10 +17,15 @@ html {
 }
 
 section {
+  display: flex;
   padding: 0 32px;
   width: 100%;
   justify-content: center;
   align-items: center;
+}
+
+#landing {
+  flex-direction: column;
 }
 
 nav {
@@ -56,6 +61,12 @@ ul {
 li {
   list-style-type: none;
   padding-left: 16px;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  margin: auto 0;
 }
 
 footer {
@@ -457,7 +468,9 @@ header .row {
   border: 1px solid rgb(229, 231, 235);
   border-image: initial;
   position: relative;
-  margin: 56px;
+  justify-content: center;
+  align-items: center;
+  margin: 70px 5px;
   z-index: 1;
 }
 
@@ -1179,11 +1192,15 @@ footer ul {
     display: flex;
     margin: 0 auto;
     padding: 32px 16px;
-    margin: 144px 48px;
+    margin: 64px 0px;
   }
 
   #landing .container {
     margin-bottom: 0px;
+  }
+
+  #features .container {
+    margin-bottom: 0;
   }
 
   /*#quality .container,
@@ -1233,6 +1250,7 @@ footer ul {
   #testimonials .row {
     width: 100%;
     max-width: 960px;
+    margin: auto 0;
   }
 
   h1 {
@@ -1309,6 +1327,7 @@ footer ul {
     /*margin-top: 16px;
     margin-bottom: 64px;*/
     padding-right: 0px;
+    margin-bottom: 32px;
   }
 
   /*.header__img {
@@ -1333,10 +1352,14 @@ footer ul {
   }*/
 
   .steps__grid {
-    bottom: 30px;
+    bottom: 80px;
     left: 50%;
     width: 5rem;
     height: 5rem;
+  }
+
+  .steps__description {
+    padding-left: 40px;
   }
 
   .list__plans {
@@ -1346,7 +1369,7 @@ footer ul {
   }
 
   .plan {
-    max-width: 35%;
+    max-width: 40%;
     margin: auto 0;
     margin-right: 0px;
     margin-bottom: 32px;
@@ -1378,7 +1401,10 @@ footer ul {
   }
 
   footer {
+    width: 100%;
+    max-width: 1024px;
     padding: 80px 32px;
+    margin: auto 0;
   }
 
   .footer__bottom {
