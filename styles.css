@@ -1368,6 +1368,7 @@ footer ul {
 
   .start__buttons {
     width: auto;
+    margin-top: 16px;
     /*margin-top: 24px;*/
   }
 
