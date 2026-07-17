@@ -74,12 +74,15 @@ footer {
   margin-bottom: -32px;
   position: relative;
   overflow: hidden;
-  width: 100%; /* Sets the footer to full width */
-  margin: 0; /* Removes any margins that could affect alignment */
+  width: 100%;
+  margin: 0;
 }
 
 .container {
+  max-width: 1200px;
   padding: 96px 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .row {
@@ -1713,6 +1716,11 @@ footer ul {
     padding-right: 0;
   }
 
+  #steps .row {
+    display: flex;
+    margin: auto 0;
+  }
+
   #steps .section__tag {
     margin-top: 48px;
   }
@@ -1759,6 +1767,7 @@ footer ul {
   .steps__description {
     margin-right: 0;
     padding-left: 0;
+    margin-left: 0;
   }
 
   .step__title {
