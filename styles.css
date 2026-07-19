@@ -74,7 +74,6 @@ footer {
   margin-bottom: -32px;
   position: relative;
   overflow: hidden;
-  width: 100%;
   max-width: 1200px;
   margin: 0;
 }
@@ -600,7 +599,8 @@ header .row {
 }
 
 .values__description {
-  max-width: 576px;
+  /*max-width: 576px;*/
+  padding: 32px 64px 32px 0
   margin-right: 64px;
 }
 
@@ -1191,16 +1191,29 @@ footer ul {
 
 @media (max-width: 1280px) {
   .container {
-    width: 100%;
     max-width: 1160px;
-    padding: 96px 0;
+    padding: 96px 0px;
     margin: auto 0;
+  }
+
+  .row {
+    max-width: 1160px;
+  }
+
+  .nav__row {
+    max-width: 1160px;
+    padding: 0 48px;
   }
 
   #quality .row {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  footer {
+    max-width: 1160px;
+    margin: auto 0;
   }
 
   .quality__description {
@@ -1211,17 +1224,40 @@ footer ul {
   .quality__img--wrapper {
     width: auto;
     max-width: 640px;
-    margin: 70px 32px;
-  }
-
-  .steps__description {
-    margin: 0 56px;
+    margin: 70px 16px;
   }
 
   .steps__grid {
     width: 6rem;
     height: 6rem;
-    bottom: 10px;
+    bottom: 120px;
+  }
+
+  .steps__img--wrapper {
+    width: 60%;
+    /*max-width: 340px;*/
+  }
+
+  .steps__description {
+    margin-right: 0;
+  }
+
+  .plan {
+    max-width: 50%;
+  }
+
+  #values .row {
+    margin: auto 0;
+  }
+
+  .values__img-wrapper {
+    max-width: 50%;
+    margin: auto 0;
+  }
+
+  .values__description {
+    max-width: 50%;
+    margin-right: 0;
   }
 
   .start__title {
@@ -1235,12 +1271,19 @@ footer ul {
 }
 
 @media (max-width: 1024px) {
+  footer {
+    /*width: 100%;*/
+    max-width: 1024px;
+    margin: auto 0;
+    padding: 80px 32px;
+  }
+
   .container {
     width: 100%;
     max-width: 1024px;
     display: flex;
     margin: 0 auto;
-    padding: 32px 16px;
+    padding: 80px 32px;
     margin: 64px 0px;
   }
 
@@ -1401,7 +1444,7 @@ footer ul {
   }*/
 
   .steps__grid {
-    bottom: 50px;
+    bottom: 120px;
     left: 50%;
     width: 5rem;
     height: 5rem;
@@ -1418,8 +1461,6 @@ footer ul {
   }
 
   .plan {
-    max-width: 40%;
-    margin: auto 0;
     margin-right: 0px;
     margin-bottom: 32px;
   }
@@ -1449,12 +1490,12 @@ footer ul {
     height: auto;
   }
 
-  footer {
+  /*footer {
     width: 100%;
     max-width: 1024px;
     padding: 80px 32px;
     margin: auto 0;
-  }
+  }*/
 
   .footer__bottom {
     width: 100%;
@@ -1465,11 +1506,15 @@ footer ul {
 }
 
 @media (max-width: 768px) {
+  footer {
+    max-width: 768;
+  }
+
   .container {
     width: 100%;
-    max-width: 668px;
+    max-width: 768px;
     margin: 0 auto;
-    padding: 48px 16px;
+    padding: 48px 32px;
   }
 
   #landing .container {
@@ -1882,6 +1927,10 @@ footer ul {
 }
 
 @media (max-width: 420px) {
+  footer {
+    max-width: 420px;
+  }
+
   .container {
     width: 100%;
     max-width: 420px;
@@ -1917,6 +1966,11 @@ footer ul {
     text-align: center;
   }
 
+  .nav__row {
+    max-width: 420px;
+    padding: 0 16px;
+  }
+
   #landing h1,
   #quality .section__title,
   #testimonials .section__title {
@@ -1948,7 +2002,7 @@ footer ul {
   .testimonials__description,
   .testimonials__img,
   .value {
-    width: 100%;
+    /*width: 100%;*/
     max-width: 420px;
   }
 
