@@ -442,6 +442,7 @@ header .row {
   line-height: 2;
 }
 
+
 /*QUALITY SECTION*/
 
 #quality .row {
@@ -492,6 +493,7 @@ header .row {
   z-index: 0;
   display: block;
 }
+
 
 /*STEPS SECTION*/
 
@@ -571,6 +573,7 @@ header .row {
   line-height: 2;
   margin-top: 16px;
 }
+
 
 /*VALUES SECTION*/
 
@@ -663,6 +666,7 @@ header .row {
 #values .btn {
   margin-top: 32px;
 }
+
 
 /*PRICING SECTION*/
 
@@ -847,6 +851,7 @@ header .row {
   margin: 32px 0;
 }
 
+
 /*TESTIMONIALS SECTION*/
 
 #testimonials .row {
@@ -951,6 +956,7 @@ header .row {
   margin: 0 8px;
 }
 
+
 /*START SECTION*/
 
 #start .row {
@@ -1048,6 +1054,7 @@ header .row {
   border: 1px solid rgb(160, 174, 192);
   transition: 300ms;
 }
+
 
 /*FOOTER*/
 
@@ -1198,12 +1205,6 @@ footer ul {
     margin: auto 0;
   }
 
-  #landing .container,    
-  #quality .container,
-  #steps .container {
-    max-width: 1000px;
-  }
-
   .row {
     max-width: 1160px;
     justify-content: center;
@@ -1213,6 +1214,12 @@ footer ul {
   .nav__row {
     max-width: 1160px;
     justify-content: space-between;
+  }
+
+  #landing .container,    
+  #quality .container,
+  #steps .container {
+    max-width: 1000px;
   }
 
   #quality .row {
@@ -1287,6 +1294,10 @@ footer ul {
     padding: 80px 32px;
   }
 
+  h1 {
+    font-size: 30px;
+  }
+
   .container {
     width: 100%;
     max-width: 1024px;
@@ -1294,6 +1305,12 @@ footer ul {
     margin: 0 auto;
     padding: 80px 32px;
     margin: 64px 0px;
+  }
+
+  .row {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
   }
 
   #landing .container {
@@ -1308,12 +1325,6 @@ footer ul {
     padding-top: 5rem;
     padding-bottom: 5rem;
     margin-bottom: 80px;
-  }
-
-  .row {
-    width: 100%;
-    max-width: 1024px;
-    margin: 0 auto;
   }
 
   .nav__row {
@@ -1340,10 +1351,6 @@ footer ul {
     width: 100%;
     max-width: 960px;
     margin: auto 0;
-  }
-
-  h1 {
-    font-size: 30px;
   }
 
   .nav__links {
@@ -1468,15 +1475,20 @@ footer ul {
     max-width: 768px;
   }
 
+  h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
   .container {
     width: 100%;
     max-width: 768px;
     margin: 0 auto;
     padding: 48px 32px;
-  }
-
-  #landing .container {
-    margin-top: 56px;
   }
 
   .row {
@@ -1487,6 +1499,10 @@ footer ul {
     justify-content: center;
     align-items: center;
     gap: 8px;
+  }
+
+  #landing .container {
+    margin-top: 56px;
   }
 
   .nav__row {
@@ -1530,15 +1546,6 @@ footer ul {
 
   .btn__menu {
     display: block;
-  }
-
-  h1 {
-    font-size: 30px;
-    text-align: center;
-  }
-
-  h2 {
-    text-align: center;
   }
 
   img,
@@ -1693,7 +1700,24 @@ footer ul {
     margin-top: 48px;
   }
 
+  .steps__description {
+    margin-right: 0;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .step__title {
+    margin-top: 8px;
+  }
+
+  #steps .section__title {
+    margin-bottom: 56px;
+  }
+
   .steps__img--wrapper {
+    width: 100%;
+    max-width: 448px;
+    margin-top: 100px;
     overflow: visible;
     padding-right: 0;
   }
@@ -1715,12 +1739,6 @@ footer ul {
     margin-right: 0px;
   }
 
-  .steps__img--wrapper {
-    width: 100%;
-    max-width: 448px;
-    margin-top: 100px;
-  }
-
   .quality__description,
   .quality__img--wrapper,
   .steps__description,
@@ -1732,20 +1750,6 @@ footer ul {
   .value {
     width: auto;
     max-width: 504px;
-  }
-
-  .steps__description {
-    margin-right: 0;
-    padding-left: 0;
-    margin-left: 0;
-  }
-
-  .step__title {
-    margin-top: 8px;
-  }
-
-  #steps .section__title {
-    margin-bottom: 56px;
   }
 
   .values__description {
@@ -1847,6 +1851,11 @@ footer ul {
     padding-left: 0;
   }
 
+  h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
   .container {
     width: 100%;
     max-width: 420px;
@@ -1865,11 +1874,6 @@ footer ul {
 
   #steps .container {
     padding-top: 0;
-  }
-
-  h1 {
-    font-size: 28px;
-    text-align: center;
   }
 
   .nav__row {
