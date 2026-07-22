@@ -1204,7 +1204,7 @@ footer ul {
   #landing .container,    
   #quality .container,
   #steps .container {
-    max-width: 1100px;
+    max-width: 1000px;
   }
 
   .row {
@@ -1253,22 +1253,23 @@ footer ul {
     margin-right: 0;
   }
 
-  /*.plan {
-    max-width: 60%;
-  }*/
-
   #values .row {
     margin: auto 0;
   }
 
-  .values__img-wrapper {
-    max-width: 50%;
+  .values__img--wrapper {
+    width: 100%;
+    max-width: 750px;
     margin: auto 0;
   }
 
   .values__description {
     max-width: 50%;
     margin-right: 0;
+  }
+
+  .plan {
+    max-width: 60%;
   }
 
   .start__title {
@@ -1283,7 +1284,7 @@ footer ul {
 
 @media (max-width: 1024px) {
   footer {
-    /*width: 100%;*/
+    width: 100%;
     max-width: 1024px;
     margin: auto 0;
     padding: 80px 32px;
@@ -1302,9 +1303,13 @@ footer ul {
     margin-bottom: 0px;
   }
 
-  #features .container {
-    margin-bottom: 0;
+  #quality .container {
+    max-width: 700px;
   }
+
+  /*#features .container {
+    margin-bottom: 0;
+  }*/
 
   /*#quality .container,
   #steps .container,
@@ -1465,6 +1470,12 @@ footer ul {
     padding-left: 40px;
   }
 
+  .values__img--wrapper {
+    width: 100%;
+    max-width: 500px;
+    padding-left: 32px;
+  }
+
   .list__plans {
     display: flex;
     flex-direction: column;
@@ -1475,6 +1486,7 @@ footer ul {
   .plan {
     margin-right: 0px;
     margin-bottom: 32px;
+    max-width: 320px;
   }
 
   /*.plan:last-child {
@@ -1785,12 +1797,14 @@ footer ul {
 
   .steps__img--wrapper {
     overflow: visible;
+    padding-right: 0;
   }
 
   .steps__grid {
     height: 5rem;
     width: 5rem;
     bottom: -50px;
+    padding-right: 0;
   }
 
   .step {
@@ -1848,6 +1862,11 @@ footer ul {
 
   .value__title {
     flex: space-between;
+  }
+
+  .values__img--wrapper {
+    width: 100%;
+    max-width: 448px;
   }
 
   .value:first-child,
@@ -1911,6 +1930,7 @@ footer ul {
     justify-content: flex-start;
     display: flex;
     flex-wrap: wrap;
+    padding-left: 40px;
   }
 
   .footer__column {
@@ -1940,7 +1960,9 @@ footer ul {
 
 @media (max-width: 420px) {
   footer {
+    width: 100%;
     max-width: 420px;
+    padding-left: 0;
   }
 
   .container {
@@ -2010,7 +2032,6 @@ footer ul {
   .steps__description,
   .steps__img--wrapper,
   .values__description,
-  .values__img,
   .testimonials__description,
   .testimonials__img,
   .value {
@@ -2166,6 +2187,14 @@ footer ul {
   .testimonial__profile {
     margin-bottom: 24px;
   }*/
+
+  .values__img--wrapper {
+    overflow: visible;
+  }
+
+  .values__img {
+    max-width: 320px;
+  }
 
   .plan {
     width: 100%;
