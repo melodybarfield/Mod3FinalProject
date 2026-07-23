@@ -18,8 +18,6 @@ html {
 
 section {
   padding: 0 32px;
-  /*justify-content: center;
-  align-items: center;*/
 }
 
 nav {
@@ -56,14 +54,6 @@ li {
   list-style-type: none;
   padding-left: 16px;
 }
-
-/*header {
-  display: flex;
-  margin: auto 0;
-  min-height: calc(
-    100vh - 80px
-  )
-}*/
 
 footer {
   padding: 96px 32px;
@@ -1220,10 +1210,8 @@ footer ul {
   }
 
   .row {
-    /*width: 100%;*/
     max-width: 1280px;
     padding: 0 32px;
-    /*margin: 0 16px;*/
     justify-content: center;
     align-items: center;
   }
@@ -1232,12 +1220,6 @@ footer ul {
     max-width: 1280px;
     justify-content: space-between;
   }
-
-  /*#landing .container,    
-  #quality .container,
-  #steps .container {
-    max-width: 1000px;
-  }*/
 
   #quality .row {
     display: flex;
