@@ -18,8 +18,8 @@ html {
 
 section {
   padding: 0 32px;
-  justify-content: center;
-  align-items: center;
+  /*justify-content: center;
+  align-items: center;*/
 }
 
 nav {
@@ -73,6 +73,7 @@ footer {
 }
 
 .container {
+  display: flex;
   max-width: 1200px;
   padding: 96px 0;
   justify-content: center;
@@ -82,7 +83,7 @@ footer {
 .row {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto 0;
 }
 
 .btn {
@@ -136,15 +137,15 @@ footer {
 
 /*LANDING SECTION*/
 
-#landing {
-  flex-direction: column;
+#landing .container {
+    flex-direction: column;
 }
 
 /*NAVBAR*/
 
 .nav__row {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1280px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1195,32 +1196,35 @@ footer ul {
 @media (max-width: 1280px) {
 
   footer {
-    max-width: 1160px;
+    max-width: 1280px;
     margin: auto 0;
   }
  
   .container {
-    max-width: 1160px;
+    max-width: 1280px;
     padding: 96px 0px;
     margin: auto 0;
   }
 
   .row {
-    max-width: 1160px;
+    /*width: 100%;*/
+    max-width: 1280px;
+    padding: 0 32px;
+    /*margin: 0 16px;*/
     justify-content: center;
     align-items: center;
   }
 
   .nav__row {
-    max-width: 1160px;
+    max-width: 1280px;
     justify-content: space-between;
   }
 
-  #landing .container,    
+  /*#landing .container,    
   #quality .container,
   #steps .container {
     max-width: 1000px;
-  }
+  }*/
 
   #quality .row {
     display: flex;
