@@ -17,7 +17,7 @@ html {
 }
 
 section {
-  /*padding: 0 32px;*/
+  padding: 0 32px;
 }
 
 nav {
@@ -69,7 +69,7 @@ footer {
   display: flex;
   width: 100%;
   /*max-width: 1200px;*/
-  padding: 96px 48px;
+  padding: 96px 32px;
   justify-content: center;
   align-items: center;
   margin: auto 0;
@@ -77,9 +77,9 @@ footer {
 
 .row {
   width: 100%;
+  max-width: 1200px;
   justify-content: center;
   align-items: center;
-  /*max-width: 2200px;*/
   margin: auto 0;
 }
 
@@ -139,21 +139,21 @@ footer {
 }
 
 #landing .row {
-    padding: 0;
-    margin: 0 2px;
+    margin: auto 0;
 }
 
 /*NAVBAR*/
 
 .nav__row {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 16px;
   margin: auto 0;
-  margin-left: -10px;
-  margin-right: -10px;
+  /*margin-left: -10px;
+  margin-right: -10px;*/
 }
 
 .nav__logo {
