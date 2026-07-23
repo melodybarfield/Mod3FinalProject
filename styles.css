@@ -67,10 +67,12 @@ footer {
 
 .container {
   display: flex;
-  max-width: 1200px;
-  padding: 96px 0;
+  width: 100%;
+  /*max-width: 1200px;*/
+  padding: 96px 32px;
   justify-content: center;
   align-items: center;
+  margin: auto 0;
 }
 
 .row {
