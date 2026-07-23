@@ -57,10 +57,13 @@ li {
   padding-left: 16px;
 }
 
-header {
+/*header {
   display: flex;
   margin: auto 0;
-}
+  min-height: calc(
+    100vh - 80px
+  )
+}*/
 
 footer {
   padding: 96px 32px;
@@ -141,6 +144,11 @@ footer {
     flex-direction: column;
 }
 
+#landing .row {
+    padding: 0;
+    margin: 0 2px;
+}
+
 /*NAVBAR*/
 
 .nav__row {
@@ -150,9 +158,8 @@ footer {
   justify-content: space-between;
   align-items: center;
   margin: auto 0;
-  margin-left: -20px;
-  margin-right: -20px;
-  padding-left: 20px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 .nav__logo {
@@ -964,6 +971,8 @@ header .row {
   position: relative;
   border-radius: 8px;
   overflow: hidden;
+  padding: 0;
+  margin: 0 32px;
 }
 
 .start__container {
@@ -981,7 +990,7 @@ header .row {
   width: 100%;
   margin: 0 auto;
   max-width: 1024px;
-  padding: 0 32px;
+  /*margin: 0 32px;*/
   display: flex;
   justify-content: center;
   align-items: center;
