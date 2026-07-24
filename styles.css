@@ -1210,6 +1210,10 @@ footer ul {
     max-width: 1280px;
     margin: auto 0;
   }
+
+  h1 {
+    font-size: 36px;
+  }
  
   .container {
     max-width: 1280px;
