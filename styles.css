@@ -12,6 +12,10 @@ body {
   overflow-x: hidden;
 }
 
+main {
+    flex: 1;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -19,15 +23,6 @@ html {
 section {
   padding: 0 32px;
 }
-
-/*nav {
-  display: flex;
-  height: 80px;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-}*/
 
 nav {
     display: flex;
@@ -66,15 +61,12 @@ footer {
   margin-bottom: -32px;
   position: relative;
   overflow: hidden;
-  max-width: 1200px;
-  margin: 0;
 }
 
 .container {
   display: flex;
   width: 100%;
-  /*max-width: 1200px;*/
-  padding: 96px 32px;
+  padding: 96px 0px;
   justify-content: center;
   align-items: center;
   margin: auto 0;
@@ -83,8 +75,6 @@ footer {
 .row {
   width: 100%;
   max-width: 1280px;
-  /*justify-content: center;
-  align-items: center;*/
   margin: auto 0;
 }
 
@@ -516,7 +506,6 @@ header .row {
 .steps__img--wrapper {
   display: flex;
   position: relative;
-  width: 50%;
   justify-content: center;
   align-items: center;
   height: auto;
@@ -542,7 +531,7 @@ header .row {
 
 .steps__description {
   max-width: 576px;
-  margin-right: 64px;
+  margin-left: 64px;
 }
 
 .step {
@@ -1068,6 +1057,7 @@ header .row {
 
 footer .row {
     padding: 0;
+    max-width: 100%;
 }
 
 .footer__blob--1 {
@@ -1096,7 +1086,7 @@ footer .row {
   display: flex;
   justify-content: space-between;
   margin-top: -48px;
-  margin: 0 64px;
+  flex-wrap: wrap;
 }
 
 .footer__column {
