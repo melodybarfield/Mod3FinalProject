@@ -1239,15 +1239,13 @@ footer ul {
     align-items: center;
   }
 
-  .quality__description {
-    width: 100%;
-    max-width: 424px;
-  }
-
-  .quality__img--wrapper {
-    width: auto;
-    max-width: 640px;
-    margin: 72px 16px;
+  .quality__img--wrapper,
+  .quality__description,
+  .steps__img--wrapper,
+  .steps__description,
+  .values__img--wrapper,
+  .values__description {
+    width: 50%;
   }
 
   .steps__grid {
@@ -1257,7 +1255,6 @@ footer ul {
   }
 
   .steps__img--wrapper {
-    width: 50%;
     overflow: visible;
   }
 
@@ -1270,19 +1267,12 @@ footer ul {
     margin: auto 0;
   }
 
-  .values__img--wrapper {
-    width: 100%;
-    max-width: 752px;
-    margin: auto 0;
-  }
-
   .values__description {
-    max-width: 50%;
-    margin-right: 0;
+    padding-right: 64px;
   }
 
   .plan {
-    max-width: 60%;
+    max-width: 65%;
   }
 
   .start__title {
