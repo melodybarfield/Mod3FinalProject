@@ -1735,9 +1735,7 @@ footer ul {
   .steps__description,
   .steps__img--wrapper,
   .values__description,
-  .values__img,
   .testimonials__description,
-  .testimonials__img,
   .value {
     width: auto;
     max-width: 504px;
@@ -1745,6 +1743,7 @@ footer ul {
 
   .values__description {
     margin-top: 40px;
+    padding-right: 0;
   }
 
   .value__para {
