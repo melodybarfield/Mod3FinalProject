@@ -1605,6 +1605,7 @@ footer ul {
   .header__customers--title {
     font-size: 16px;
     letter-spacing: 0.05em;
+    margin-top: 32px;
   }
 
   .header__customers--img {
