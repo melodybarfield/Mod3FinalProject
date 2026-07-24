@@ -1492,6 +1492,11 @@ footer ul {
     margin-top: 56px;
   }
 
+  #landing {
+    width: 100%;
+    padding: 0 32px;
+  }
+
   .nav__row {
     display: flex;
     flex-direction: row;
@@ -1535,7 +1540,7 @@ footer ul {
     display: block;
   }
 
-  img,
+  /*img,
   .header__email,
   .testimonials__img--wrapper {
     width: 100%;
@@ -1543,7 +1548,7 @@ footer ul {
     height: auto;
     justify-content: center;
     align-items: center;
-  }
+  }*/
 
   .header__description {
     display: flex;
