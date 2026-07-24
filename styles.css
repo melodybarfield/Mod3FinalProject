@@ -1458,6 +1458,10 @@ footer ul {
 
 @media (max-width: 768px) {
 
+  section {
+    width: 100%;
+  }
+
   footer {
     max-width: 768px;
   }
@@ -1480,6 +1484,7 @@ footer ul {
 
   .row {
     width: 100%;
+    max-width: 768px;
     text-align: center;
     display: flex;
     flex-direction: column-reverse;
@@ -1490,11 +1495,6 @@ footer ul {
 
   #landing .container {
     margin-top: 56px;
-  }
-
-  #landing {
-    width: 100%;
-    padding: 0 32px;
   }
 
   .nav__row {
