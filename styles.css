@@ -361,6 +361,8 @@ header .row {
 }
 
 .header__img--wrapper {
+    display: flex;
+    justify-content: flex-end;
     width: calc(100% - 40%);
   }
 
@@ -1942,7 +1944,6 @@ footer ul {
 
   .header__customers--img {
     width: 400px;
-    height: auto;
   }
 
   .header__img--wrapper {
@@ -1970,6 +1971,10 @@ footer ul {
     text-align: center;
     padding-bottom: 0;
     margin: 0 24px;
+  }
+
+  #quality .row {
+    width: 100%;
   }
 
   .quality__grid {
