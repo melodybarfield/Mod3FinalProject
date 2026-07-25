@@ -1479,7 +1479,7 @@ footer ul {
     width: 100%;
     max-width: 768px;
     margin: 0 auto;
-    padding: 48px 0;
+    padding: 64px 0;
   }
 
   .row {
@@ -1496,6 +1496,11 @@ footer ul {
   #landing .container {
     margin-top: 56px;
     margin-bottom: 40px;
+  }
+
+  #pricing .container,
+  #testimonials .container {
+    margin-top: 40px;
   }
 
   .nav__row {
@@ -1540,16 +1545,6 @@ footer ul {
   .btn__menu {
     display: block;
   }
-
-  /*img,
-  .header__email,
-  .testimonials__img--wrapper {
-    width: 100%;
-    max-width: 472px;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-  }*/
 
   .header__description {
     display: flex;
@@ -1693,6 +1688,10 @@ footer ul {
     margin-top: 48px;
   }
 
+  #steps .section__title {
+    margin-bottom: 56px;
+  }
+
   .steps__description {
     margin-right: 0;
     padding-left: 0;
@@ -1701,10 +1700,6 @@ footer ul {
 
   .step__title {
     margin-top: 8px;
-  }
-
-  #steps .section__title {
-    margin-bottom: 56px;
   }
 
   .steps__img--wrapper {
@@ -1761,6 +1756,7 @@ footer ul {
   .values__img--wrapper {
     width: 100%;
     max-width: 448px;
+    padding-left: 0;
   }
 
   .value:first-child,
@@ -1842,10 +1838,15 @@ footer ul {
 
 
 @media (max-width: 420px) {
-  footer {
+
+  section {
     width: 100%;
+  }
+
+  footer {
+    /*width: 100%;*/
     max-width: 420px;
-    padding: 80px 0;
+    /*padding: 80px 0;*/
   }
 
   h1 {
