@@ -1495,6 +1495,7 @@ footer ul {
 
   #landing .container {
     margin-top: 56px;
+    margin-bottom: 40px;
   }
 
   .nav__row {
@@ -1770,6 +1771,11 @@ footer ul {
   .plan {
     width: 100%;
     max-width: 368px;
+  }
+
+  .testimonials__img--wrapper {
+    width: 70%;
+    margin-bottom: 32px;
   }
 
   .testimonial__profile {
